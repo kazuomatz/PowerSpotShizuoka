@@ -2,8 +2,8 @@
 //  main.m
 //  PowerSpot
 //
-//  Created by 松永和男 on 2014/04/11.
-//  Copyright (c) 2014年 jp.iarchitect. All rights reserved.
+//  Created by Kazuomatz on 2014/04/11.
+//  Copyright (c) 2014年 Kazuomatz All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

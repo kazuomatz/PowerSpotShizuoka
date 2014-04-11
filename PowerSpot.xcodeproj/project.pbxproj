@@ -13,14 +13,18 @@
 		2129524918F766F400BB5AB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2129524718F766F400BB5AB2 /* InfoPlist.strings */; };
 		2129524B18F766F400BB5AB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129524A18F766F400BB5AB2 /* main.m */; };
 		2129524F18F766F400BB5AB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129524E18F766F400BB5AB2 /* AppDelegate.m */; };
-		2129525218F766F400BB5AB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2129525018F766F400BB5AB2 /* Main.storyboard */; };
-		2129525518F766F400BB5AB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129525418F766F400BB5AB2 /* ViewController.m */; };
 		2129525718F766F400BB5AB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2129525618F766F400BB5AB2 /* Images.xcassets */; };
 		2129525E18F766F400BB5AB2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2129525D18F766F400BB5AB2 /* XCTest.framework */; };
 		2129525F18F766F400BB5AB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2129523E18F766F400BB5AB2 /* Foundation.framework */; };
 		2129526018F766F400BB5AB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2129524218F766F400BB5AB2 /* UIKit.framework */; };
 		2129526818F766F400BB5AB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2129526618F766F400BB5AB2 /* InfoPlist.strings */; };
 		2129526A18F766F400BB5AB2 /* PowerSpotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129526918F766F400BB5AB2 /* PowerSpotTests.m */; };
+		2129527418F7670600BB5AB2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2129527318F7670600BB5AB2 /* MapKit.framework */; };
+		2129527618F7685C00BB5AB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2129527518F7685C00BB5AB2 /* Main.storyboard */; };
+		2129527D18F7688100BB5AB2 /* LocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129527818F7688100BB5AB2 /* LocationTableViewController.m */; };
+		2129527E18F7688100BB5AB2 /* LocationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129527A18F7688100BB5AB2 /* LocationDetailViewController.m */; };
+		2129527F18F7688100BB5AB2 /* PaddingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129527C18F7688100BB5AB2 /* PaddingLabel.m */; };
+		2129528218F7699D00BB5AB2 /* SpotAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129528118F7699D00BB5AB2 /* SpotAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +48,22 @@
 		2129524C18F766F400BB5AB2 /* PowerSpot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PowerSpot-Prefix.pch"; sourceTree = "<group>"; };
 		2129524D18F766F400BB5AB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2129524E18F766F400BB5AB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2129525118F766F400BB5AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2129525318F766F400BB5AB2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2129525418F766F400BB5AB2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2129525618F766F400BB5AB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2129525C18F766F400BB5AB2 /* PowerSpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerSpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2129525D18F766F400BB5AB2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2129526518F766F400BB5AB2 /* PowerSpotTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PowerSpotTests-Info.plist"; sourceTree = "<group>"; };
 		2129526718F766F400BB5AB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2129526918F766F400BB5AB2 /* PowerSpotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowerSpotTests.m; sourceTree = "<group>"; };
+		2129527318F7670600BB5AB2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2129527518F7685C00BB5AB2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2129527718F7688100BB5AB2 /* LocationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTableViewController.h; sourceTree = "<group>"; };
+		2129527818F7688100BB5AB2 /* LocationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTableViewController.m; sourceTree = "<group>"; };
+		2129527918F7688100BB5AB2 /* LocationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailViewController.h; sourceTree = "<group>"; };
+		2129527A18F7688100BB5AB2 /* LocationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailViewController.m; sourceTree = "<group>"; };
+		2129527B18F7688100BB5AB2 /* PaddingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddingLabel.h; sourceTree = "<group>"; };
+		2129527C18F7688100BB5AB2 /* PaddingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddingLabel.m; sourceTree = "<group>"; };
+		2129528018F7699D00BB5AB2 /* SpotAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotAnnotation.h; sourceTree = "<group>"; };
+		2129528118F7699D00BB5AB2 /* SpotAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2129527418F7670600BB5AB2 /* MapKit.framework in Frameworks */,
 				2129524118F766F400BB5AB2 /* CoreGraphics.framework in Frameworks */,
 				2129524318F766F400BB5AB2 /* UIKit.framework in Frameworks */,
 				2129523F18F766F400BB5AB2 /* Foundation.framework in Frameworks */,
@@ -101,6 +113,7 @@
 		2129523D18F766F400BB5AB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2129527318F7670600BB5AB2 /* MapKit.framework */,
 				2129523E18F766F400BB5AB2 /* Foundation.framework */,
 				2129524018F766F400BB5AB2 /* CoreGraphics.framework */,
 				2129524218F766F400BB5AB2 /* UIKit.framework */,
@@ -113,10 +126,16 @@
 			isa = PBXGroup;
 			children = (
 				2129524D18F766F400BB5AB2 /* AppDelegate.h */,
+				2129527718F7688100BB5AB2 /* LocationTableViewController.h */,
+				2129527818F7688100BB5AB2 /* LocationTableViewController.m */,
+				2129527918F7688100BB5AB2 /* LocationDetailViewController.h */,
+				2129527A18F7688100BB5AB2 /* LocationDetailViewController.m */,
+				2129527B18F7688100BB5AB2 /* PaddingLabel.h */,
+				2129527C18F7688100BB5AB2 /* PaddingLabel.m */,
 				2129524E18F766F400BB5AB2 /* AppDelegate.m */,
-				2129525018F766F400BB5AB2 /* Main.storyboard */,
-				2129525318F766F400BB5AB2 /* ViewController.h */,
-				2129525418F766F400BB5AB2 /* ViewController.m */,
+				2129528018F7699D00BB5AB2 /* SpotAnnotation.h */,
+				2129528118F7699D00BB5AB2 /* SpotAnnotation.m */,
+				2129527518F7685C00BB5AB2 /* Main.storyboard */,
 				2129525618F766F400BB5AB2 /* Images.xcassets */,
 				2129524518F766F400BB5AB2 /* Supporting Files */,
 			);
@@ -228,9 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2129527618F7685C00BB5AB2 /* Main.storyboard in Resources */,
 				2129525718F766F400BB5AB2 /* Images.xcassets in Resources */,
 				2129524918F766F400BB5AB2 /* InfoPlist.strings in Resources */,
-				2129525218F766F400BB5AB2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2129525518F766F400BB5AB2 /* ViewController.m in Sources */,
+				2129527E18F7688100BB5AB2 /* LocationDetailViewController.m in Sources */,
+				2129527D18F7688100BB5AB2 /* LocationTableViewController.m in Sources */,
 				2129524F18F766F400BB5AB2 /* AppDelegate.m in Sources */,
+				2129527F18F7688100BB5AB2 /* PaddingLabel.m in Sources */,
+				2129528218F7699D00BB5AB2 /* SpotAnnotation.m in Sources */,
 				2129524B18F766F400BB5AB2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,14 +302,6 @@
 				2129524818F766F400BB5AB2 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2129525018F766F400BB5AB2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2129525118F766F400BB5AB2 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		2129526618F766F400BB5AB2 /* InfoPlist.strings */ = {

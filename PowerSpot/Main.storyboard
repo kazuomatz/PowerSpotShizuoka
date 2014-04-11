@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="5Qh-dL-qUH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="R2z-N6-PNu">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="5Qh-dL-qUH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="NhT-UQ-HsN"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nED-ql-peA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eHN-Kp-RkT" kind="relationship" relationship="rootViewController" id="2XY-CP-cvI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgC-aB-ZVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="175"/>
+        </scene>
+        <!--Location Table View Controller-->
+        <scene sceneID="FIB-Vy-EfS">
+            <objects>
+                <tableViewController storyboardIdentifier="LocationTableViewController" id="eHN-Kp-RkT" customClass="LocationTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mqA-A8-AJv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableCell" id="THx-2f-k8J">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="THx-2f-k8J" id="4mZ-ZY-tId">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eHN-Kp-RkT" id="lUZ-e7-K1B"/>
+                            <outlet property="delegate" destination="eHN-Kp-RkT" id="lmU-PI-X8o"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="AIF-uB-n5o"/>
+                    <connections>
+                        <segue destination="ffE-xY-LDn" kind="push" identifier="toMapSeque" id="W2j-QB-gZR"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcx-Zq-EwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541" y="175"/>
+        </scene>
+        <!--Location Detail View Controller-->
+        <scene sceneID="nIr-pP-VvQ">
+            <objects>
+                <viewController id="ffE-xY-LDn" customClass="LocationDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RBr-Ut-zXS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="Ih6-cF-t7h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AGn-8z-0oP" customClass="PaddingLabel">
+                                <rect key="frame" x="10" y="481" width="303" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ayf-Ft-1iw"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="AGn-8z-0oP" id="yQS-ki-h7G"/>
+                        <outlet property="mapView" destination="Ih6-cF-t7h" id="icI-A4-kfg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k48-Qr-nBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="175"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
